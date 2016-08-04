@@ -1,0 +1,21 @@
+//
+   Created by supersoup on 16/8/4.
+document
+html
+   head
+      title it部文档
+      link(rel="stylesheet", href="mystyle.css")
+      link(rel="stylesheet", href="strapdown.css")
+   body
+      .menu-box
+         .menu-show
+            ul.menu-list
+               each item in fileArr
+                  li: a(href="?file/#{item}") #{item}
+            a.to-menu-hide
+         .menu-hide: a.to-menu-show
+      xmp#xmp
+
+      script(src="jquery.js")
+      script(src="main.js")
+
